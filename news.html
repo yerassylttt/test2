@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>Новости Олимпиад по Биологии в Казахстане</title>
+    <meta name="description" content="Последние новости о Национальной Олимпиаде по Биологии 2023">
+    <meta name="author" content="Комитет Олимпиады по Биологии">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT -->
+    <link rel="stylesheet" href="https://use.typekit.net/vsl0dwc.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <style>
+        body {
+            font-family: 'Courier', Courier, monospace;
+        }
+        .expandable-content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .news-header {
+            cursor: pointer;
+            color: black; /* Standard text color */
+            font-weight: bold; /* Make it bold to indicate it's clickable */
+            padding: 5px 0; /* Add some padding for better spacing */
+        }
+        .news-header:hover {
+            color: #555; /* Change color on hover for better UX */
+        }
+    </style>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            var allContents = document.getElementsByClassName('expandable-content');
+
+            // Close all other contents
+            for (var i = 0; i < allContents.length; i++) {
+                if (allContents[i].id !== id) {
+                    allContents[i].style.display = "none";
+                }
+            }
+
+            // Toggle the clicked content
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Primary Page Layout -->
+    <div class="container">
+
+        <div class="row" style="margin-top: 5%">
+            <div class="twelve columns">
+                <h1>Новости Олимпиад по Биологии в Казахстане</h1>
+
+                <!-- Horizontal Navigation Menu -->
+                <div class="nav-menu">
+                    <a href="index.html">Главная</a>
+                    <div class="dropdown">
+                        <a href="#olympiads">Олимпиады</a>
+                        <div class="dropdown-content">
+                            <a href="republican.html">Республиканская олимпиада</a>
+                            <a href="presidential.html">Президентская олимпиада</a>
+                            <a href="rural.html">Республиканская олимпиада для учеников сельских школ</a>
+                            <a href="junior.html">Республиканская Юниорская олимпиада</a>
+                        </div>
+                    </div>
+                    <a href="selection.html">Отбор на IBO</a>
+                    <a href="news.html">Новости</a>
+                    <a href="syllabus.html">Силлабус</a>
+                    <a href="tips.html">Советы</a>
+                    <a href="past_papers.html">Прошлые экзамены</a>
+                    <a href="authors.html">Об авторах</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 5%">
+            <div class="twelve columns">
+                <h6>Последние новости</h6>
+                <p>Следите за последними новостями и обновлениями о олимпиадах по биологии в Казахстане.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Дата</th>
+                            <th>Заголовок</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01.10.2023</td>
+                            <td class="news-header" onclick="toggleContent('content1')">Открыта регистрация на Республиканскую олимпиаду по биологии</td>
+                        </tr>
+                        <tr id="content1" class="expandable-content">
+                            <td colspan="2">
+                                <p>Регистрация для участия в Республиканской олимпиаде по биологии открыта до 15 октября. Участники могут зарегистрироваться через официальный сайт. <br> 
+                                Дополнительная информация будет доступна на нашем сайте.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15.10.2023</td>
+                            <td class="news-header" onclick="toggleContent('content2')">Пройдут отборочные этапы для участия в Президентской олимпиаде</td>
+                        </tr>
+                        <tr id="content2" class="expandable-content">
+                            <td colspan="2">
+                                <p>Отборочные этапы для Президентской олимпиады начнутся 20 октября. Участники должны подготовить необходимые документы. <br>
+                                Подробности можно узнать у организаторов.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>22.10.2023</td>
+                            <td class="news-header" onclick="toggleContent('content3')">Объявлены даты проведения Республиканской Юниорской олимпиады</td>
+                        </tr>
+                        <tr id="content3" class="expandable-content">
+                            <td colspan="2">
+                                <p>Республиканская Юниорская олимпиада пройдет с 1 по 3 ноября. Участники должны зарегистрироваться до 28 октября. <br>
+                                Следите за новостями для получения актуальной информации.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>05.11.2023</td>
+                            <td class="news-header" onclick="toggleContent('content4')">Подготовительные семинары для участников олимпиад</td>
+                        </tr>
+                        <tr id="content4" class="expandable-content">
+                            <td colspan="2">
+                                <p>Семинары по подготовке участников олимпиад пройдут 10 ноября. Все желающие могут принять участие. <br>
+                                Для регистрации обращайтесь по указанным контактам.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

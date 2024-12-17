@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>Прошлые экзаменационные работы</title>
+    <meta name="description" content="Сборник прошлых экзаменационных работ Международной Олимпиады по Биологии">
+    <meta name="author" content="Комитет Олимпиады по Биологии">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT -->
+    <link rel="stylesheet" href="https://use.typekit.net/vsl0dwc.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <style>
+        body {
+            font-family: 'Courier', Courier, monospace;
+        }
+        .folder {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s;
+        }
+        .folder:hover {
+            background-color: #f9e0de;
+        }
+        .subfolder {
+            margin-left: 20px;
+            display: none; /* Hidden by default */
+        }
+        .subfolder a {
+            display: block;
+            margin: 5px 0;
+            color: #333;
+            text-decoration: none;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .subfolder a:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+    <script>
+        function toggleSubfolder(id) {
+            var subfolder = document.getElementById(id);
+            if (subfolder.style.display === "none" || subfolder.style.display === "") {
+                subfolder.style.display = "block";
+            } else {
+                subfolder.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Primary Page Layout -->
+    <div class="container">
+
+        <div class="row" style="margin-top: 5%">
+            <div class="twelve columns">
+                <h1>Прошлые экзаменационные работы</h1>
+
+                <!-- Horizontal Navigation Menu -->
+                <div class="nav-menu">
+                    <a href="index.html">Главная</a>
+                    <div class="dropdown">
+                        <a href="#olympiads">Олимпиады</a>
+                        <div class="dropdown-content">
+                            <a href="republican.html">Республиканская олимпиада</a>
+                            <a href="presidential.html">Президентская олимпиада</a>
+                            <a href="rural.html">Республиканская олимпиада для учеников сельских школ</a>
+                            <a href="junior.html">Республиканская Юниорская олимпиада</a>
+                        </div>
+                    </div>
+                    <a href="selection.html">Отбор на IBO</a>
+                    <a href="news.html">Новости</a>
+                    <a href="syllabus.html">Силлабус</a>
+                    <a href="tips.html">Советы</a>
+                    <a href="past_papers.html">Прошлые экзамены</a>
+                    <a href="authors.html">Об авторах</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 5%">
+            <div class="twelve columns">
+                <h6>Сборник прошлых экзаменационных работ</h6>
+                <p>На этой странице вы можете найти прошлые экзаменационные работы по различным олимпиадам. Выберите учебный год и тип олимпиады, чтобы получить доступ к заданиям и решениям.</p>
+
+                <div class="folder" onclick="toggleSubfolder('year2021')">2021-2022 учебный год</div>
+                <div id="year2021" class="subfolder">
+                    <div class="folder" onclick="toggleSubfolder('olympiad2021')">Олимпиады</div>
+                    <div id="olympiad2021" class="subfolder">
+                        <div class="folder" onclick="toggleSubfolder('republican2021')">Республиканская олимпиада</div>
+                        <div id="republican2021" class="subfolder">
+                            <div class="folder" onclick="toggleSubfolder('republican_district2021')">Районный этап</div>
+                            <div id="republican_district2021" class="subfolder">
+                            <a href="path/to/republican_district_1_rus.pdf" target="_blank">Районный - Задания на русском 1 тур</a>
+                            <a href="path/to/republican_district_1_kaz.pdf" target="_blank">Районный - Задания на казахском 1 тур</a>
+                            <a href="path/to/republican_district_2_rus.pdf" target="_blank">Районный - Задания на русском 2 тур</a>
+                            <a href="path/to/republican_district_2_kaz.pdf" target="_blank">Районный - Задания на казахском 2 тур</a>
+                            <a href="path/to/republican_district_solution_1.pdf" target="_blank">Районный - Решения 1 тур</a>
+                            <a href="path/to/republican_district_solution_2.pdf" target="_blank">Районный - Решения 2 тур</a>
+                        </div>
+                        </div>
+                        <div class="folder" onclick="toggleSubfolder('presidential2021')">Президентская олимпиада</div>
+                        <div id="presidential2021" class="subfolder">
+                            <a href="path/to/presidential_district_1_rus.pdf" target="_blank">Районный - Задания на русском 1 тур</a>
+                            <a href="path/to/presidential_district_1_kaz.pdf" target="_blank">Районный - Задания на казахском 1 тур</a>
+                            <a href="path/to/presidential_district_2_rus.pdf" target="_blank">Районный - Задания на русском 2 тур</a>
+                            <a href="path/to/presidential_district_2_kaz.pdf" target="_blank">Районный - Задания на казахском 2 тур</a>
+                            <a href="path/to/presidential_district_solution_1.pdf" target="_blank">Районный - Решения 1 тур</a>
+                            <a href="path/to/presidential_district_solution_2.pdf" target="_blank">Районный - Решения 2 тур</a>
+                        </div>
+                        <div class="folder" onclick="toggleSubfolder('rural2021')">Республиканская олимпиада для учеников сельских школ</div>
+                        <div id="rural2021" class="subfolder">
+                            <a href="path/to/rural_district_1_rus.pdf" target="_blank">Районный - Задания на русском 1 тур</a>
+                            <a href="path/to/rural_district_1_kaz.pdf" target="_blank">Районный - Задания на казахском 1 тур</a>
+                            <a href="path/to/rural_district_2_rus.pdf" target="_blank">Районный - Задания на русском 2 тур</a>
+                            <a href="path/to/rural_district_2_kaz.pdf" target="_blank">Районный - Задания на казахском 2 тур</a>
+                            <a href="path/to/rural_district_solution_1.pdf" target="_blank">Районный - Решения 1 тур</a>
+                            <a href="path/to/rural_district_solution_2.pdf" target="_blank">Районный - Решения 2 тур</a>
+                        </div>
+                        <div class="folder" onclick="toggleSubfolder('junior2021')">Республиканская Юниорская олимпиада</div>
+                        <div id="junior2021" class="subfolder">
+                            <a href="path/to/junior_district_1_rus.pdf" target="_blank">Районный - Задания на русском 1 тур</a>
+                            <a href="path/to/junior_district_1_kaz.pdf" target="_blank">Районный - Задания на казахском 1 тур</a>
+                            <a
