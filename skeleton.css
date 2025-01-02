@@ -178,7 +178,7 @@ a:hover {
     /* color: #cc4545; */
     text-decoration:underline;
     text-transform: uppercase;
-    color: #D14E4E;
+    color: #D24E4E;
 }
 
 
@@ -369,7 +369,7 @@ tr {
 }
 
 tr:hover {
-    background: #f9e0de;
+    background: #FFEAEA;
 }
 
 /* Spacing
