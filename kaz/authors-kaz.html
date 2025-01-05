@@ -40,6 +40,19 @@
         .hidden {
             display: none;
         }
+
+        /* Media query for mobile devices */
+        @media (max-width: 600px) {
+            .nav-menu {
+                flex-direction: column; /* Change to vertical layout */
+                align-items: flex-start; /* Align items to the start */
+            }
+
+            .nav-menu a {
+                width: 100%; /* Make links full width */
+                padding: 10px; /* Increase padding for better touch targets */
+            }
+        }
     </style>
 </head>
 <body>
